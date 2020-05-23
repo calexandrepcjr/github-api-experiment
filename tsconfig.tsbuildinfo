@@ -1816,19 +1816,24 @@
         "signature": "80e3e158fbbb22cab068c3f91ec262086822f90ca629e02984060b8caf571993",
         "affectsGlobalScope": false
       },
+      "./src/services/contracts/response-without-header.ts": {
+        "version": "f2112edf3403bf2fd8c3c4273518d3ae67e54c46c34bda96bdcfeb4a82dd0b19",
+        "signature": "9ef5aa085e7946b63009df9d8315644dcfa85aef9057ac5a330dbd2e1802708a",
+        "affectsGlobalScope": false
+      },
       "./src/services/contracts/response-with-header.ts": {
-        "version": "c68caaaa8e831f1b90972b745d4fd57cdc5f402b3d00b54c09dd2407dae8f4ce",
-        "signature": "b9e0ca2dfea735aa9c967293c9ea05521a8edd71e405d4255906db748dd58308",
+        "version": "608b5a77f0ab0b5bd338b0640b60fc7f68ed26dd8f0696df8886817da6ad02fd",
+        "signature": "b9a113041fd7709a007a65daf95d1b0f142cdfb9c0bdb217f7cbba0f087e588d",
         "affectsGlobalScope": false
       },
       "./src/services/contracts/github-user-service.ts": {
-        "version": "c4559aa2e8bcadff210fd323f2c9bba73c62a1df71d15ca74356b0bc9ade2f7f",
-        "signature": "8c19e11ee8a5337e9090d98c88a1dd65d8ae5344aacbd5365296d62062c2f981",
+        "version": "4056619836854c18c1e81216affffcf2190d95cbf45d6f3e5db336760b0a02b1",
+        "signature": "51eddb0bc781da9d74b2d04b60cd907b101a56389a8aeac6114b5ab5e6bf3f43",
         "affectsGlobalScope": false
       },
       "./src/datasources/github.datasource.ts": {
-        "version": "7a9467c2b8d107cdd9baef1806ee4e384f66b6ae624c444b2f1164511679b24f",
-        "signature": "3cea1edf6847df6f98f135abcd8af103952cf3d251e6ccb086c592f915b1c46c",
+        "version": "2bc95d21b544155c45484069a3b670e6a2f365dca6c6cc27e3942bc6e6048989",
+        "signature": "a0f268f7ffe3c51338450604f3870abc553f02c4caa254a1bbd734dc8ed88260",
         "affectsGlobalScope": false
       },
       "./src/datasources/index.ts": {
@@ -1842,8 +1847,8 @@
         "affectsGlobalScope": false
       },
       "./src/controllers/users.controller.ts": {
-        "version": "bdd2bb7e789ce171482ba32c3232c8de97325c03f33cf69da7c73119675c9f20",
-        "signature": "0d9dba1f60c28e8780b7f42f12cc48b50c27c615cdb525cf5059b999b84c76fa",
+        "version": "df2512e3b07237763b8d31ec037cc9f9a66fd286c4d03f25238942e13c7065e8",
+        "signature": "63a7a4526b95b5cf38f021739fc17454039feb838df260107e90cd841d09569c",
         "affectsGlobalScope": false
       },
       "./src/controllers/index.ts": {
@@ -4400,10 +4405,16 @@
       "./src/services/contracts/github-user-service.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/services/contracts/response-with-header.ts"
+        "./src/services/contracts/response-with-header.ts",
+        "./src/services/contracts/response-without-header.ts"
       ],
       "./src/services/contracts/response-with-header.ts": [
         "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/services/contracts/response-without-header.ts"
+      ],
+      "./src/services/contracts/response-without-header.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
@@ -6855,10 +6866,12 @@
         "./node_modules/@loopback/rest/dist/index.d.ts"
       ],
       "./src/services/contracts/github-user-service.ts": [
-        "./src/services/contracts/response-with-header.ts"
+        "./src/services/contracts/response-with-header.ts",
+        "./src/services/contracts/response-without-header.ts"
       ],
       "./src/services/contracts/response-with-header.ts": [
-        "./node_modules/@loopback/rest/dist/index.d.ts"
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./src/services/contracts/response-without-header.ts"
       ],
       "./src/services/github-user.service.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -7247,6 +7260,7 @@
       "./src/sequence.ts",
       "./src/services/contracts/github-user-service.ts",
       "./src/services/contracts/response-with-header.ts",
+      "./src/services/contracts/response-without-header.ts",
       "./src/services/github-user.service.ts",
       "./src/services/index.ts"
     ]

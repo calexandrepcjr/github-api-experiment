@@ -49,6 +49,36 @@ export class UsersController {
     };
   }
 
+  @get("/users/{username}", {
+    responses: {
+      "200": {
+        description: "This endpoint must return the details of a GitHub user",
+        content: {
+          "application/json": {
+            schema: {
+              type: "object",
+              properties: {
+                details: {
+                  description: "User details",
+                  type: "object",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  })
+  async details(
+    @param.path.string("username") username: string,
+  ): Promise<object> {
+    const details = (await this.githubUserService.details(username)).body;
+
+    return {
+      details,
+    };
+  }
+
   private nextLink(link: string): string {
     return link.split(";")[0].replace(/<|>/gi, "");
   }

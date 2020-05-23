@@ -10,7 +10,7 @@ const config = {
     {
       template: {
         method: "GET",
-        url: "https://api.github.com/users?since={format=json}",
+        url: "https://api.github.com/users",
         headers: {
           accepts: "application/json",
           "content-type": "application/json",
@@ -22,7 +22,21 @@ const config = {
         responseHeaders: true,
       },
       functions: {
-        since: [],
+        since: ["since"],
+      },
+    },
+    {
+      template: {
+        method: "GET",
+        url: "https://api.github.com/users/{p}",
+        headers: {
+          accepts: "application/json",
+          "content-type": "application/json",
+          "User-Agent": "GithubApiExperiment",
+        },
+      },
+      functions: {
+        details: ["p"],
       },
     },
   ],
