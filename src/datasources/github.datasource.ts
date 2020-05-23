@@ -39,6 +39,20 @@ const config = {
         details: ["p"],
       },
     },
+    {
+      template: {
+        method: "GET",
+        url: "https://api.github.com/users/{p}/repos",
+        headers: {
+          accepts: "application/json",
+          "content-type": "application/json",
+          "User-Agent": "GithubApiExperiment",
+        },
+      },
+      functions: {
+        repositories: ["p"],
+      },
+    },
   ],
 };
 

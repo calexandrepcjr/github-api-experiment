@@ -16,7 +16,7 @@ export class UsersController {
     responses: {
       "200": {
         description:
-          "This endpoint must return a list of GitHub users and the link for the next page. ",
+          "This endpoint returns a list of GitHub users and the link for the next page. ",
         content: {
           "application/json": {
             schema: {
@@ -26,6 +26,7 @@ export class UsersController {
                   description: "List of Github users",
                   type: "array",
                   items: {
+                    description: "Github user",
                     type: "object",
                   },
                 },
@@ -52,17 +53,12 @@ export class UsersController {
   @get("/users/{username}", {
     responses: {
       "200": {
-        description: "This endpoint must return the details of a GitHub user",
+        description: "This endpoint returns the details of a GitHub user",
         content: {
           "application/json": {
             schema: {
+              description: "User details",
               type: "object",
-              properties: {
-                details: {
-                  description: "User details",
-                  type: "object",
-                },
-              },
             },
           },
         },
@@ -74,9 +70,35 @@ export class UsersController {
   ): Promise<object> {
     const details = (await this.githubUserService.details(username)).body;
 
-    return {
-      details,
-    };
+    return details;
+  }
+
+  @get("/users/{username}/repos", {
+    responses: {
+      "200": {
+        description: "This endpoint returns a list with all user repositories ",
+        content: {
+          "application/json": {
+            schema: {
+              description: "List of User repositories",
+              type: "array",
+              items: {
+                description: "User repository",
+                type: "object",
+              },
+            },
+          },
+        },
+      },
+    },
+  })
+  async repositories(
+    @param.path.string("username") username: string,
+  ): Promise<object> {
+    const repositories = (await this.githubUserService.repositories(username))
+      .body;
+
+    return repositories;
   }
 
   private nextLink(link: string): string {
