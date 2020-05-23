@@ -68,9 +68,7 @@ export class UsersController {
   async details(
     @param.path.string("username") username: string,
   ): Promise<object> {
-    const details = (await this.githubUserService.details(username)).body;
-
-    return details;
+    return (await this.githubUserService.details(username)).body;
   }
 
   @get("/users/{username}/repos", {
@@ -95,10 +93,7 @@ export class UsersController {
   async repositories(
     @param.path.string("username") username: string,
   ): Promise<object> {
-    const repositories = (await this.githubUserService.repositories(username))
-      .body;
-
-    return repositories;
+    return (await this.githubUserService.repositories(username)).body;
   }
 
   private nextLink(link: string): string {

@@ -1,6 +1,9 @@
-import {ApplicationConfig, GithubApiExperimentApplication} from './application';
+import {
+  ApplicationConfig,
+  GithubApiExperimentApplication,
+} from "./application";
 
-export * from './application';
+export * from "./application";
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new GithubApiExperimentApplication(options);
@@ -32,8 +35,8 @@ if (require.main === module) {
       },
     },
   };
-  main(config).catch(err => {
-    console.error('Cannot start the application.', err);
+  main(config).catch((err) => {
+    console.error("Cannot start the application.", err);
     process.exit(1);
   });
 }
