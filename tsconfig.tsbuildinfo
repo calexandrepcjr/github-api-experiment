@@ -1807,7 +1807,22 @@
         "affectsGlobalScope": false
       },
       "./src/__tests__/acceptance/ping.controller.acceptance.ts": {
-        "version": "626bf3c9f0e4f3c6dc9cd9e798d0432883cdf838921890abb5cb6e9ff8007cae",
+        "version": "5e68736ae4796a7d773b806cca55a38b3e0d433ab1a699643f5af4c5efa6d083",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/chai/index.d.ts": {
+        "version": "1df845885d8bd29132f67f47b7a64ec35f4b83962274ee9fb38ae40a82305a72",
+        "signature": "1df845885d8bd29132f67f47b7a64ec35f4b83962274ee9fb38ae40a82305a72",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/chai-each/@types/index.d.ts": {
+        "version": "70abf872b14eb17dc3b41d03c6520ad7ab0dc306187dda14993960208d14e051",
+        "signature": "70abf872b14eb17dc3b41d03c6520ad7ab0dc306187dda14993960208d14e051",
+        "affectsGlobalScope": true
+      },
+      "./src/__tests__/acceptance/users.controller.acceptance.ts": {
+        "version": "34002abb7683b0ee3931d7862bb6f5f11d4db2c0626b9a6c0b80ec2f543ff07a",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -3599,6 +3614,10 @@
         "./node_modules/@types/node/ts3.7/index.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/@types/chai/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/@types/color-name/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
@@ -4014,6 +4033,11 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/chai-each/@types/index.d.ts": [
+        "./node_modules/@types/chai/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/loopback-datasource-juggler/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -4341,6 +4365,15 @@
         "./node_modules/@loopback/testlab/dist/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
+        "./src/index.ts"
+      ],
+      "./src/__tests__/acceptance/users.controller.acceptance.ts": [
+        "./node_modules/@loopback/testlab/dist/index.d.ts",
+        "./node_modules/@types/chai/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/chai-each/@types/index.d.ts",
+        "./src/__tests__/acceptance/test-helper.ts",
         "./src/index.ts"
       ],
       "./src/application.ts": [
@@ -6106,6 +6139,10 @@
         "./node_modules/@types/node/ts3.7/index.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/@types/chai/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/@types/color-name/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
@@ -6518,6 +6555,11 @@
         "./node_modules/@types/node/util.d.ts"
       ],
       "./node_modules/ajv/lib/ajv.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/chai-each/@types/index.d.ts": [
+        "./node_modules/@types/chai/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
@@ -7110,6 +7152,7 @@
       "./node_modules/@loopback/testlab/dist/validate-api-spec.d.ts",
       "./node_modules/@loopback/testlab/should-as-function.d.ts",
       "./node_modules/@types/body-parser/index.d.ts",
+      "./node_modules/@types/chai/index.d.ts",
       "./node_modules/@types/color-name/index.d.ts",
       "./node_modules/@types/connect/index.d.ts",
       "./node_modules/@types/cookiejar/index.d.ts",
@@ -7183,6 +7226,7 @@
       "./node_modules/@types/supertest/index.d.ts",
       "./node_modules/@types/type-is/index.d.ts",
       "./node_modules/ajv/lib/ajv.d.ts",
+      "./node_modules/chai-each/@types/index.d.ts",
       "./node_modules/loopback-datasource-juggler/index.d.ts",
       "./node_modules/loopback-datasource-juggler/types/common.d.ts",
       "./node_modules/loopback-datasource-juggler/types/connector.d.ts",
@@ -7249,6 +7293,7 @@
       "./src/__tests__/acceptance/home-page.acceptance.ts",
       "./src/__tests__/acceptance/ping.controller.acceptance.ts",
       "./src/__tests__/acceptance/test-helper.ts",
+      "./src/__tests__/acceptance/users.controller.acceptance.ts",
       "./src/application.ts",
       "./src/controllers/index.ts",
       "./src/controllers/ping.controller.ts",
