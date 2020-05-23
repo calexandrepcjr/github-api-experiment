@@ -43,8 +43,6 @@ export class UsersController {
   async since(@param.query.number("since") since: number): Promise<object> {
     const users = await this.githubUserService.since(since);
 
-    console.log("USERS", users);
-
     return {
       users: users.body,
       next: this.nextLink(users.headers.link.toString()),
