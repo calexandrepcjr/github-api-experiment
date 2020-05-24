@@ -1,1 +1,1 @@
-web: slc run 
+web: node index.js
